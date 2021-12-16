@@ -119,10 +119,4 @@ final class KeyImpl implements Key {
   public int compareTo(final @NotNull Key that) {
     return Key.super.compareTo(that);
   }
-
-  static int clampCompare(final int value) {
-    if (value < 0) return -1;
-    if (value > 0) return 1;
-    return value;
-  }
 }
